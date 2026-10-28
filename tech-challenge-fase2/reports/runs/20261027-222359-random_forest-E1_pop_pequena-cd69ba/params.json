@@ -1,0 +1,20 @@
+{
+  "run_id": "20261027-222359-random_forest-E1_pop_pequena-cd69ba",
+  "name": "random_forest-E1_pop_pequena",
+  "params": {
+    "model": "random_forest",
+    "population_size": 10,
+    "generations": 8,
+    "crossover_rate": 0.9,
+    "mutation_rate": 0.1,
+    "selection": "tournament",
+    "tournament_k": 3,
+    "crossover": "uniform",
+    "blx_alpha": 0.5,
+    "mutation": "gaussian",
+    "mutation_sigma": 0.1,
+    "elitism": 1,
+    "patience": null,
+    "seed": 42
+  }
+}

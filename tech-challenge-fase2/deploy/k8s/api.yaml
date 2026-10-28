@@ -1,0 +1,115 @@
+# Kubernetes: API com escalabilidade automática (HPA).
+#   kubectl apply -f deploy/k8s/
+# Pré-requisitos: imagem publicada (troque IMAGE abaixo) e metrics-server no cluster.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: tech-challenge
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+  namespace: tech-challenge
+data:
+  LLM_PROVIDER: "groq"
+  LOG_FORMAT: "json"
+  LOG_LEVEL: "INFO"
+---
+# Crie o segredo sem versionar a chave:
+#   kubectl -n tech-challenge create secret generic llm-secret --from-literal=LLM_API_KEY=...
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: diagnostico-api
+  namespace: tech-challenge
+  labels: { app: diagnostico-api }
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: diagnostico-api }
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: { maxUnavailable: 0, maxSurge: 1 }
+  template:
+    metadata:
+      labels: { app: diagnostico-api }
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+        prometheus.io/path: "/metrics"
+    spec:
+      containers:
+        - name: api
+          image: ghcr.io/gusta2150/tech-challenge-fase2:latest   # IMAGE
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - configMapRef: { name: api-config }
+            - secretRef: { name: llm-secret, optional: true }
+          resources:
+            requests: { cpu: "250m", memory: "512Mi" }
+            limits: { cpu: "1", memory: "1Gi" }
+          readinessProbe:
+            httpGet: { path: /ready, port: 8000 }
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /health, port: 8000 }
+            initialDelaySeconds: 15
+            periodSeconds: 20
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: diagnostico-api
+  namespace: tech-challenge
+spec:
+  selector: { app: diagnostico-api }
+  ports:
+    - port: 80
+      targetPort: 8000
+---
+# Escala de 2 a 10 réplicas conforme CPU (70%) e memória (80%).
+# Sobe rápido (picos de demanda) e desce devagar (evita oscilação).
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: diagnostico-api
+  namespace: tech-challenge
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: diagnostico-api
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target: { type: Utilization, averageUtilization: 70 }
+    - type: Resource
+      resource:
+        name: memory
+        target: { type: Utilization, averageUtilization: 80 }
+  behavior:
+    scaleUp:
+      stabilizationWindowSeconds: 30
+      policies:
+        - { type: Percent, value: 100, periodSeconds: 30 }
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+        - { type: Pods, value: 1, periodSeconds: 60 }
+---
+# Garante disponibilidade mínima durante manutenção dos nós
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: diagnostico-api
+  namespace: tech-challenge
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels: { app: diagnostico-api }

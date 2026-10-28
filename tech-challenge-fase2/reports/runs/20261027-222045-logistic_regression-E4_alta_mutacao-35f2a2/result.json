@@ -1,0 +1,77 @@
+{
+  "description": "Mutação alta e uniforme com seleção por ranking — foco em exploração",
+  "config": {
+    "population_size": 16,
+    "generations": 12,
+    "crossover_rate": 0.7,
+    "mutation_rate": 0.3,
+    "selection": "rank",
+    "tournament_k": 3,
+    "crossover": "uniform",
+    "blx_alpha": 0.5,
+    "mutation": "uniform",
+    "mutation_sigma": 0.1,
+    "elitism": 2,
+    "patience": null,
+    "seed": 42
+  },
+  "best_params": {
+    "C": 0.4669,
+    "l1_ratio": 0.14,
+    "class_weight": null,
+    "threshold": 0.31
+  },
+  "cv_fitness": 0.9763066935464516,
+  "cv_metrics": {
+    "accuracy": 0.9736263736263736,
+    "precision": 0.9540229885057471,
+    "recall": 0.9764705882352941,
+    "f1": 0.9651162790697675,
+    "roc_auc": 0.9955211558307533,
+    "false_negatives": 4,
+    "false_positives": 8,
+    "fitness": 0.9763066935464516
+  },
+  "evaluations": 148,
+  "cache_hits": 60,
+  "model_fits": 126,
+  "elapsed_s": 51.035,
+  "stopped_early": false,
+  "run_id": "20261027-222045-logistic_regression-E4_alta_mutacao-35f2a2",
+  "test_metrics": {
+    "accuracy": 0.9824561403508771,
+    "precision": 0.9761904761904762,
+    "recall": 0.9761904761904762,
+    "f1": 0.9761904761904762,
+    "roc_auc": 0.9970238095238094,
+    "false_negatives": 1,
+    "false_positives": 1
+  },
+  "robust_cv": {
+    "accuracy": {
+      "mean": 0.967032967032967,
+      "std": 0.020063097344511574
+    },
+    "precision": {
+      "mean": 0.9453664588958707,
+      "std": 0.034661047608144216
+    },
+    "recall": {
+      "mean": 0.9686274509803922,
+      "std": 0.027310565249380633
+    },
+    "f1": {
+      "mean": 0.9565676276573396,
+      "std": 0.02642514898093077
+    },
+    "roc_auc": {
+      "mean": 0.9933952528379774,
+      "std": 0.006134928358184427
+    },
+    "fitness": {
+      "mean": 0.9693600731888407,
+      "std": 0.021096334922963415
+    }
+  },
+  "duration_s": 51.95
+}

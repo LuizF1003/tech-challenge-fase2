@@ -1,0 +1,161 @@
+2026-10-27 22:19:04,488 INFO    src.experiments | baseline avaliado  model=logistic_regression cv_fitness=0.9671 test_recall=0.9523809523809523
+2026-10-27 22:19:04,489 INFO    src.experiments | iniciando experimento  model=logistic_regression experiment=E1_pop_pequena
+2026-10-27 22:19:07,495 INFO    src.ga.engine | geração 0 | melhor=0.9731 média=0.6500 diversidade=0.273 avaliações=10
+2026-10-27 22:19:08,954 INFO    src.ga.engine | geração 1 | melhor=0.9731 média=0.9533 diversidade=0.183 avaliações=18
+2026-10-27 22:19:10,521 INFO    src.ga.engine | geração 2 | melhor=0.9736 média=0.9696 diversidade=0.149 avaliações=23
+2026-10-27 22:19:10,784 INFO    src.ga.engine | geração 3 | melhor=0.9752 média=0.9726 diversidade=0.075 avaliações=25
+2026-10-27 22:19:12,078 INFO    src.ga.engine | geração 4 | melhor=0.9771 média=0.9749 diversidade=0.072 avaliações=30
+2026-10-27 22:19:12,098 INFO    src.ga.engine | geração 5 | melhor=0.9771 média=0.9766 diversidade=0.036 avaliações=31
+2026-10-27 22:19:12,380 INFO    src.ga.engine | geração 6 | melhor=0.9771 média=0.9766 diversidade=0.011 avaliações=33
+2026-10-27 22:19:12,499 INFO    src.ga.engine | geração 7 | melhor=0.9771 média=0.9769 diversidade=0.024 avaliações=34
+2026-10-27 22:19:12,886 INFO    src.ga.engine | geração 8 | melhor=0.9771 média=0.9767 diversidade=0.008 avaliações=36
+2026-10-27 22:19:13,853 INFO    src.experiments | experimento concluído  model=logistic_regression experiment=E1_pop_pequena cv_fitness=0.9771 evaluations=36 elapsed_s=8.397
+2026-10-27 22:19:13,854 INFO    src.experiments | iniciando experimento  model=logistic_regression experiment=E2_blx_torneio
+2026-10-27 22:19:19,517 INFO    src.ga.engine | geração 0 | melhor=0.9750 média=0.7693 diversidade=0.272 avaliações=16
+2026-10-27 22:19:24,219 INFO    src.ga.engine | geração 1 | melhor=0.9760 média=0.9678 diversidade=0.231 avaliações=29
+2026-10-27 22:19:26,553 INFO    src.ga.engine | geração 2 | melhor=0.9761 média=0.9700 diversidade=0.192 avaliações=40
+2026-10-27 22:19:30,691 INFO    src.ga.engine | geração 3 | melhor=0.9761 média=0.9725 diversidade=0.153 avaliações=49
+2026-10-27 22:19:34,397 INFO    src.ga.engine | geração 4 | melhor=0.9761 média=0.9739 diversidade=0.082 avaliações=62
+2026-10-27 22:19:38,284 INFO    src.ga.engine | geração 5 | melhor=0.9761 média=0.9734 diversidade=0.085 avaliações=74
+2026-10-27 22:19:42,507 INFO    src.ga.engine | geração 6 | melhor=0.9770 média=0.9744 diversidade=0.063 avaliações=87
+2026-10-27 22:19:47,899 INFO    src.ga.engine | geração 7 | melhor=0.9770 média=0.9742 diversidade=0.079 avaliações=101
+2026-10-27 22:19:50,981 INFO    src.ga.engine | geração 8 | melhor=0.9770 média=0.9749 diversidade=0.080 avaliações=111
+2026-10-27 22:19:54,863 INFO    src.ga.engine | geração 9 | melhor=0.9770 média=0.9746 diversidade=0.070 avaliações=122
+2026-10-27 22:19:59,458 INFO    src.ga.engine | geração 10 | melhor=0.9770 média=0.9750 diversidade=0.060 avaliações=134
+2026-10-27 22:20:03,752 INFO    src.ga.engine | geração 11 | melhor=0.9770 média=0.9748 diversidade=0.050 avaliações=146
+2026-10-27 22:20:08,941 INFO    src.ga.engine | geração 12 | melhor=0.9770 média=0.9761 diversidade=0.052 avaliações=158
+2026-10-27 22:20:10,390 INFO    src.experiments | experimento concluído  model=logistic_regression experiment=E2_blx_torneio cv_fitness=0.977 evaluations=158 elapsed_s=55.087
+2026-10-27 22:20:10,391 INFO    src.experiments | iniciando experimento  model=logistic_regression experiment=E3_roleta_um_ponto
+2026-10-27 22:20:18,364 INFO    src.ga.engine | geração 0 | melhor=0.9750 média=0.7832 diversidade=0.266 avaliações=24
+2026-10-27 22:20:21,041 INFO    src.ga.engine | geração 1 | melhor=0.9750 média=0.9252 diversidade=0.270 avaliações=38
+2026-10-27 22:20:25,006 INFO    src.ga.engine | geração 2 | melhor=0.9750 média=0.9457 diversidade=0.260 avaliações=56
+2026-10-27 22:20:29,773 INFO    src.ga.engine | geração 3 | melhor=0.9750 média=0.9618 diversidade=0.238 avaliações=71
+2026-10-27 22:20:32,790 INFO    src.ga.engine | geração 4 | melhor=0.9750 média=0.9674 diversidade=0.212 avaliações=85
+2026-10-27 22:20:36,211 INFO    src.ga.engine | geração 5 | melhor=0.9750 média=0.9681 diversidade=0.193 avaliações=98
+2026-10-27 22:20:39,226 INFO    src.ga.engine | geração 6 | melhor=0.9753 média=0.9704 diversidade=0.194 avaliações=111
+2026-10-27 22:20:40,348 INFO    src.ga.engine | geração 7 | melhor=0.9753 média=0.9716 diversidade=0.168 avaliações=122
+2026-10-27 22:20:42,224 INFO    src.ga.engine | geração 8 | melhor=0.9772 média=0.9727 diversidade=0.162 avaliações=131
+2026-10-27 22:20:43,772 INFO    src.ga.engine | geração 9 | melhor=0.9772 média=0.9723 diversidade=0.156 avaliações=136
+2026-10-27 22:20:44,562 INFO    src.ga.engine | geração 10 | melhor=0.9780 média=0.9735 diversidade=0.145 avaliações=145
+2026-10-27 22:20:45,403 INFO    src.experiments | experimento concluído  model=logistic_regression experiment=E3_roleta_um_ponto cv_fitness=0.978 evaluations=145 elapsed_s=34.171
+2026-10-27 22:20:45,405 INFO    src.experiments | iniciando experimento  model=logistic_regression experiment=E4_alta_mutacao
+2026-10-27 22:20:51,327 INFO    src.ga.engine | geração 0 | melhor=0.9750 média=0.7693 diversidade=0.272 avaliações=16
+2026-10-27 22:20:56,310 INFO    src.ga.engine | geração 1 | melhor=0.9750 média=0.9489 diversidade=0.248 avaliações=29
+2026-10-27 22:21:00,100 INFO    src.ga.engine | geração 2 | melhor=0.9750 média=0.9581 diversidade=0.262 avaliações=39
+2026-10-27 22:21:04,012 INFO    src.ga.engine | geração 3 | melhor=0.9750 média=0.9063 diversidade=0.268 avaliações=52
+2026-10-27 22:21:08,527 INFO    src.ga.engine | geração 4 | melhor=0.9750 média=0.9581 diversidade=0.252 avaliações=65
+2026-10-27 22:21:11,461 INFO    src.ga.engine | geração 5 | melhor=0.9750 média=0.9562 diversidade=0.265 avaliações=77
+2026-10-27 22:21:15,861 INFO    src.ga.engine | geração 6 | melhor=0.9750 média=0.9550 diversidade=0.247 avaliações=89
+2026-10-27 22:21:19,519 INFO    src.ga.engine | geração 7 | melhor=0.9750 média=0.9449 diversidade=0.247 avaliações=99
+2026-10-27 22:21:22,960 INFO    src.ga.engine | geração 8 | melhor=0.9750 média=0.9517 diversidade=0.262 avaliações=111
+2026-10-27 22:21:26,671 INFO    src.ga.engine | geração 9 | melhor=0.9755 média=0.9678 diversidade=0.270 avaliações=120
+2026-10-27 22:21:30,447 INFO    src.ga.engine | geração 10 | melhor=0.9763 média=0.9505 diversidade=0.239 avaliações=131
+2026-10-27 22:21:33,480 INFO    src.ga.engine | geração 11 | melhor=0.9763 média=0.9692 diversidade=0.232 avaliações=139
+2026-10-27 22:21:36,440 INFO    src.ga.engine | geração 12 | melhor=0.9763 média=0.9675 diversidade=0.239 avaliações=148
+2026-10-27 22:21:37,355 INFO    src.experiments | experimento concluído  model=logistic_regression experiment=E4_alta_mutacao cv_fitness=0.9763 evaluations=148 elapsed_s=51.035
+2026-10-27 22:21:37,357 INFO    src.experiments | iniciando experimento  model=logistic_regression experiment=E5_semeado_baseline
+2026-10-27 22:21:42,370 INFO    src.ga.engine | geração 0 | melhor=0.9750 média=0.7699 diversidade=0.275 avaliações=16
+2026-10-27 22:21:47,732 INFO    src.ga.engine | geração 1 | melhor=0.9760 média=0.9691 diversidade=0.215 avaliações=29
+2026-10-27 22:21:50,629 INFO    src.ga.engine | geração 2 | melhor=0.9761 média=0.9699 diversidade=0.188 avaliações=40
+2026-10-27 22:21:54,492 INFO    src.ga.engine | geração 3 | melhor=0.9761 média=0.9725 diversidade=0.153 avaliações=49
+2026-10-27 22:21:58,510 INFO    src.ga.engine | geração 4 | melhor=0.9761 média=0.9739 diversidade=0.082 avaliações=62
+2026-10-27 22:22:02,106 INFO    src.ga.engine | geração 5 | melhor=0.9761 média=0.9734 diversidade=0.085 avaliações=74
+2026-10-27 22:22:06,978 INFO    src.ga.engine | geração 6 | melhor=0.9770 média=0.9744 diversidade=0.063 avaliações=87
+2026-10-27 22:22:12,571 INFO    src.ga.engine | geração 7 | melhor=0.9770 média=0.9742 diversidade=0.079 avaliações=101
+2026-10-27 22:22:16,051 INFO    src.ga.engine | geração 8 | melhor=0.9770 média=0.9749 diversidade=0.080 avaliações=111
+2026-10-27 22:22:19,912 INFO    src.ga.engine | geração 9 | melhor=0.9770 média=0.9746 diversidade=0.070 avaliações=122
+2026-10-27 22:22:23,352 INFO    src.ga.engine | geração 10 | melhor=0.9770 média=0.9750 diversidade=0.060 avaliações=134
+2026-10-27 22:22:27,688 INFO    src.ga.engine | geração 11 | melhor=0.9770 média=0.9748 diversidade=0.050 avaliações=146
+2026-10-27 22:22:33,133 INFO    src.ga.engine | geração 12 | melhor=0.9770 média=0.9761 diversidade=0.052 avaliações=158
+2026-10-27 22:22:34,811 INFO    src.experiments | experimento concluído  model=logistic_regression experiment=E5_semeado_baseline cv_fitness=0.977 evaluations=158 elapsed_s=55.776
+2026-10-27 22:23:59,140 INFO    src.experiments | baseline avaliado  model=random_forest cv_fitness=0.9621 test_recall=0.9285714285714286
+2026-10-27 22:23:59,141 INFO    src.experiments | iniciando experimento  model=random_forest experiment=E1_pop_pequena
+2026-10-27 22:24:31,827 INFO    src.ga.engine | geração 0 | melhor=0.9606 média=0.9418 diversidade=0.265 avaliações=10
+2026-10-27 22:24:49,862 INFO    src.ga.engine | geração 1 | melhor=0.9667 média=0.9562 diversidade=0.227 avaliações=16
+2026-10-27 22:24:55,762 INFO    src.ga.engine | geração 2 | melhor=0.9667 média=0.9596 diversidade=0.187 avaliações=20
+2026-10-27 22:25:11,159 INFO    src.ga.engine | geração 3 | melhor=0.9667 média=0.9620 diversidade=0.143 avaliações=27
+2026-10-27 22:25:24,462 INFO    src.ga.engine | geração 4 | melhor=0.9667 média=0.9657 diversidade=0.108 avaliações=32
+2026-10-27 22:25:34,921 INFO    src.ga.engine | geração 5 | melhor=0.9676 média=0.9660 diversidade=0.050 avaliações=37
+2026-10-27 22:25:53,817 INFO    src.ga.engine | geração 6 | melhor=0.9676 média=0.9653 diversidade=0.053 avaliações=43
+2026-10-27 22:26:08,150 INFO    src.ga.engine | geração 7 | melhor=0.9676 média=0.9672 diversidade=0.042 avaliações=47
+2026-10-27 22:26:23,154 INFO    src.ga.engine | geração 8 | melhor=0.9676 média=0.9668 diversidade=0.041 avaliações=51
+2026-10-27 22:26:33,599 INFO    src.experiments | experimento concluído  model=random_forest experiment=E1_pop_pequena cv_fitness=0.9676 evaluations=51 elapsed_s=144.015
+2026-10-27 22:26:33,600 INFO    src.experiments | iniciando experimento  model=random_forest experiment=E2_blx_torneio
+2026-10-27 22:27:17,059 INFO    src.ga.engine | geração 0 | melhor=0.9606 média=0.9422 diversidade=0.268 avaliações=16
+2026-10-27 22:27:49,793 INFO    src.ga.engine | geração 1 | melhor=0.9606 média=0.9472 diversidade=0.250 avaliações=28
+2026-10-27 22:28:21,020 INFO    src.ga.engine | geração 2 | melhor=0.9619 média=0.9515 diversidade=0.246 avaliações=41
+2026-10-27 22:28:49,042 INFO    src.ga.engine | geração 3 | melhor=0.9648 média=0.9596 diversidade=0.193 avaliações=53
+2026-10-27 22:29:12,068 INFO    src.ga.engine | geração 4 | melhor=0.9648 média=0.9608 diversidade=0.118 avaliações=67
+2026-10-27 22:29:32,799 INFO    src.ga.engine | geração 5 | melhor=0.9648 média=0.9615 diversidade=0.060 avaliações=79
+2026-10-27 22:29:49,977 INFO    src.ga.engine | geração 6 | melhor=0.9649 média=0.9626 diversidade=0.054 avaliações=91
+2026-10-27 22:30:12,645 INFO    src.ga.engine | geração 7 | melhor=0.9649 média=0.9615 diversidade=0.046 avaliações=105
+2026-10-27 22:30:30,964 INFO    src.ga.engine | geração 8 | melhor=0.9649 média=0.9623 diversidade=0.051 avaliações=119
+2026-10-27 22:30:49,385 INFO    src.ga.engine | geração 9 | melhor=0.9658 média=0.9629 diversidade=0.056 avaliações=133
+2026-10-27 22:31:06,585 INFO    src.ga.engine | geração 10 | melhor=0.9658 média=0.9629 diversidade=0.056 avaliações=145
+2026-10-27 22:31:23,516 INFO    src.ga.engine | geração 11 | melhor=0.9658 média=0.9601 diversidade=0.071 avaliações=158
+2026-10-27 22:31:40,208 INFO    src.ga.engine | geração 12 | melhor=0.9659 média=0.9615 diversidade=0.078 avaliações=169
+2026-10-27 22:31:44,949 INFO    src.experiments | experimento concluído  model=random_forest experiment=E2_blx_torneio cv_fitness=0.9659 evaluations=169 elapsed_s=306.608
+2026-10-27 22:31:44,951 INFO    src.experiments | iniciando experimento  model=random_forest experiment=E3_roleta_um_ponto
+2026-10-27 22:32:59,635 INFO    src.ga.engine | geração 0 | melhor=0.9606 média=0.9360 diversidade=0.281 avaliações=24
+2026-10-27 22:33:51,558 INFO    src.ga.engine | geração 1 | melhor=0.9606 média=0.9456 diversidade=0.278 avaliações=43
+2026-10-27 22:34:33,749 INFO    src.ga.engine | geração 2 | melhor=0.9606 média=0.9489 diversidade=0.273 avaliações=60
+2026-10-27 22:35:05,026 INFO    src.ga.engine | geração 3 | melhor=0.9623 média=0.9530 diversidade=0.258 avaliações=76
+2026-10-27 22:35:38,852 INFO    src.ga.engine | geração 4 | melhor=0.9639 média=0.9555 diversidade=0.235 avaliações=94
+2026-10-27 22:36:07,935 INFO    src.ga.engine | geração 5 | melhor=0.9641 média=0.9574 diversidade=0.220 avaliações=108
+2026-10-27 22:36:40,845 INFO    src.ga.engine | geração 6 | melhor=0.9653 média=0.9579 diversidade=0.220 avaliações=122
+2026-10-27 22:37:04,939 INFO    src.ga.engine | geração 7 | melhor=0.9671 média=0.9605 diversidade=0.180 avaliações=135
+2026-10-27 22:37:27,121 INFO    src.ga.engine | geração 8 | melhor=0.9672 média=0.9637 diversidade=0.144 avaliações=147
+2026-10-27 22:37:40,469 INFO    src.ga.engine | geração 9 | melhor=0.9674 média=0.9646 diversidade=0.130 avaliações=155
+2026-10-27 22:37:47,903 INFO    src.ga.engine | geração 10 | melhor=0.9674 média=0.9657 diversidade=0.106 avaliações=162
+2026-10-27 22:37:52,284 INFO    src.experiments | experimento concluído  model=random_forest experiment=E3_roleta_um_ponto cv_fitness=0.9674 evaluations=162 elapsed_s=362.952
+2026-10-27 22:37:52,286 INFO    src.experiments | iniciando experimento  model=random_forest experiment=E4_alta_mutacao
+2026-10-27 22:38:43,566 INFO    src.ga.engine | geração 0 | melhor=0.9606 média=0.9422 diversidade=0.268 avaliações=16
+2026-10-27 22:39:20,099 INFO    src.ga.engine | geração 1 | melhor=0.9606 média=0.9400 diversidade=0.267 avaliações=29
+2026-10-27 22:39:58,482 INFO    src.ga.engine | geração 2 | melhor=0.9636 média=0.9487 diversidade=0.248 avaliações=43
+2026-10-27 22:40:39,084 INFO    src.ga.engine | geração 3 | melhor=0.9636 média=0.9480 diversidade=0.259 avaliações=57
+2026-10-27 22:41:19,419 INFO    src.ga.engine | geração 4 | melhor=0.9636 média=0.9503 diversidade=0.255 avaliações=70
+2026-10-27 22:41:55,071 INFO    src.ga.engine | geração 5 | melhor=0.9636 média=0.9469 diversidade=0.229 avaliações=83
+2026-10-27 22:42:38,732 INFO    src.ga.engine | geração 6 | melhor=0.9636 média=0.9443 diversidade=0.261 avaliações=97
+2026-10-27 22:43:21,136 INFO    src.ga.engine | geração 7 | melhor=0.9645 média=0.9485 diversidade=0.251 avaliações=111
+2026-10-27 22:44:00,201 INFO    src.ga.engine | geração 8 | melhor=0.9661 média=0.9515 diversidade=0.255 avaliações=125
+2026-10-27 22:44:30,537 INFO    src.ga.engine | geração 9 | melhor=0.9661 média=0.9431 diversidade=0.253 avaliações=138
+2026-10-27 22:45:01,225 INFO    src.ga.engine | geração 10 | melhor=0.9661 média=0.9513 diversidade=0.266 avaliações=152
+2026-10-27 22:45:26,403 INFO    src.ga.engine | geração 11 | melhor=0.9661 média=0.9541 diversidade=0.261 avaliações=165
+2026-10-27 22:45:45,976 INFO    src.ga.engine | geração 12 | melhor=0.9663 média=0.9554 diversidade=0.229 avaliações=177
+2026-10-27 22:45:48,896 INFO    src.experiments | experimento concluído  model=random_forest experiment=E4_alta_mutacao cv_fitness=0.9663 evaluations=177 elapsed_s=473.691
+2026-10-27 22:45:48,897 INFO    src.experiments | iniciando experimento  model=random_forest experiment=E5_semeado_baseline
+2026-10-27 22:46:41,852 INFO    src.ga.engine | geração 0 | melhor=0.9622 média=0.9427 diversidade=0.268 avaliações=16
+2026-10-27 22:47:12,439 INFO    src.ga.engine | geração 1 | melhor=0.9622 média=0.9485 diversidade=0.231 avaliações=28
+2026-10-27 22:47:49,306 INFO    src.ga.engine | geração 2 | melhor=0.9622 média=0.9553 diversidade=0.224 avaliações=41
+2026-10-27 22:48:22,115 INFO    src.ga.engine | geração 3 | melhor=0.9622 média=0.9589 diversidade=0.170 avaliações=49
+2026-10-27 22:49:00,723 INFO    src.ga.engine | geração 4 | melhor=0.9622 média=0.9603 diversidade=0.128 avaliações=59
+2026-10-27 22:49:33,455 INFO    src.ga.engine | geração 5 | melhor=0.9632 média=0.9615 diversidade=0.114 avaliações=67
+2026-10-27 22:50:01,637 INFO    src.ga.engine | geração 6 | melhor=0.9633 média=0.9623 diversidade=0.059 avaliações=74
+2026-10-27 22:50:01,689 INFO    src.ga.engine | geração 7 | melhor=0.9633 média=0.9624 diversidade=0.029 avaliações=77
+2026-10-27 22:50:10,616 INFO    src.ga.engine | geração 8 | melhor=0.9649 média=0.9621 diversidade=0.034 avaliações=85
+2026-10-27 22:50:15,946 INFO    src.ga.engine | geração 9 | melhor=0.9649 média=0.9620 diversidade=0.040 avaliações=91
+2026-10-27 22:50:30,205 INFO    src.ga.engine | geração 10 | melhor=0.9649 média=0.9630 diversidade=0.044 avaliações=95
+2026-10-27 22:50:46,021 INFO    src.ga.engine | geração 11 | melhor=0.9650 média=0.9623 diversidade=0.051 avaliações=103
+2026-10-27 22:51:02,146 INFO    src.ga.engine | geração 12 | melhor=0.9650 média=0.9640 diversidade=0.054 avaliações=108
+2026-10-27 22:51:15,138 INFO    src.experiments | experimento concluído  model=random_forest experiment=E5_semeado_baseline cv_fitness=0.965 evaluations=108 elapsed_s=313.249
+2026-10-27 22:59:16,351 INFO    src.experiments | resultados salvos  path=/root/desafio_tech/tech-challenge-fase2/reports/results/experiments.json selected=logistic_regression source=E1_pop_pequena
+
+=== Resumo (teste hold-out da Fase 1) ===
+
+Regressão Logística
+  baseline               recall=0.952 f1=0.964 auc=0.995 FN=2
+  E1_pop_pequena         recall=0.976 f1=0.965 auc=0.997 FN=1  (cv_fitness=0.9771, 36 avaliações)
+  E2_blx_torneio         recall=0.952 f1=0.952 auc=0.994 FN=2  (cv_fitness=0.9770, 158 avaliações)
+  E3_roleta_um_ponto     recall=0.976 f1=0.943 auc=0.997 FN=1  (cv_fitness=0.9780, 145 avaliações)
+  E4_alta_mutacao        recall=0.976 f1=0.976 auc=0.997 FN=1  (cv_fitness=0.9763, 148 avaliações)
+  E5_semeado_baseline    recall=0.952 f1=0.952 auc=0.994 FN=2  (cv_fitness=0.9770, 158 avaliações)
+
+Random Forest
+  baseline               recall=0.929 f1=0.963 auc=0.997 FN=3
+  E1_pop_pequena         recall=0.929 f1=0.951 auc=0.998 FN=3  (cv_fitness=0.9676, 51 avaliações)
+  E2_blx_torneio         recall=0.929 f1=0.951 auc=0.996 FN=3  (cv_fitness=0.9659, 169 avaliações)
+  E3_roleta_um_ponto     recall=0.929 f1=0.963 auc=0.995 FN=3  (cv_fitness=0.9674, 162 avaliações)
+  E4_alta_mutacao        recall=0.952 f1=0.976 auc=0.998 FN=2  (cv_fitness=0.9663, 177 avaliações)
+  E5_semeado_baseline    recall=0.929 f1=0.951 auc=0.998 FN=3  (cv_fitness=0.9650, 108 avaliações)
+
+Modelo selecionado: logistic_regression / E1_pop_pequena  params={'C': 0.5928, 'l1_ratio': 0.11, 'class_weight': None, 'threshold': 0.26}

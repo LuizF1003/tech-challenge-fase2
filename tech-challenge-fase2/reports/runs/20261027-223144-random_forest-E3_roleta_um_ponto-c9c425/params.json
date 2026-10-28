@@ -1,0 +1,20 @@
+{
+  "run_id": "20261027-223144-random_forest-E3_roleta_um_ponto-c9c425",
+  "name": "random_forest-E3_roleta_um_ponto",
+  "params": {
+    "model": "random_forest",
+    "population_size": 24,
+    "generations": 10,
+    "crossover_rate": 0.8,
+    "mutation_rate": 0.05,
+    "selection": "roulette",
+    "tournament_k": 3,
+    "crossover": "one_point",
+    "blx_alpha": 0.5,
+    "mutation": "gaussian",
+    "mutation_sigma": 0.05,
+    "elitism": 2,
+    "patience": null,
+    "seed": 42
+  }
+}

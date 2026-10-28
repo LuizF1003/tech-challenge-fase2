@@ -1,0 +1,13 @@
+{"step": 0, "best_fitness": 0.9750350877192981, "mean_fitness": 0.7699304835681053, "diversity": 0.2751114816508744, "evaluations": 16}
+{"step": 1, "best_fitness": 0.9759879798096285, "mean_fitness": 0.9690743023808401, "diversity": 0.21456090735771632, "evaluations": 29}
+{"step": 2, "best_fitness": 0.9761076908519402, "mean_fitness": 0.9699176684980391, "diversity": 0.1876143823177367, "evaluations": 40}
+{"step": 3, "best_fitness": 0.9761076908519402, "mean_fitness": 0.97253746131332, "diversity": 0.15319033073550875, "evaluations": 49}
+{"step": 4, "best_fitness": 0.9761076908519402, "mean_fitness": 0.9739438998484802, "diversity": 0.08243174711243653, "evaluations": 62}
+{"step": 5, "best_fitness": 0.9761076908519402, "mean_fitness": 0.9734226731704823, "diversity": 0.08523181561289521, "evaluations": 74}
+{"step": 6, "best_fitness": 0.9769587559161595, "mean_fitness": 0.9744051087094998, "diversity": 0.0633734365516647, "evaluations": 87}
+{"step": 7, "best_fitness": 0.9769587559161595, "mean_fitness": 0.9742314432800399, "diversity": 0.07916735166562237, "evaluations": 101}
+{"step": 8, "best_fitness": 0.9769587559161595, "mean_fitness": 0.9748672214045703, "diversity": 0.07984742417946125, "evaluations": 111}
+{"step": 9, "best_fitness": 0.9769587559161595, "mean_fitness": 0.9745925811390861, "diversity": 0.06981288447049006, "evaluations": 122}
+{"step": 10, "best_fitness": 0.9769587559161595, "mean_fitness": 0.9750114049264276, "diversity": 0.060209512460501116, "evaluations": 134}
+{"step": 11, "best_fitness": 0.9769587559161595, "mean_fitness": 0.9747776776052238, "diversity": 0.04967055074605208, "evaluations": 146}
+{"step": 12, "best_fitness": 0.9769628838831358, "mean_fitness": 0.9760849782795367, "diversity": 0.052373012382309285, "evaluations": 158}

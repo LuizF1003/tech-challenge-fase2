@@ -10,6 +10,14 @@ Projeto educacional de Machine Learning para análise de dados relacionados a ma
 
 ---
 
+## Fase 2 — Otimização com algoritmo genético e LLM
+
+A Fase 2 (Projeto 1) está em [`tech-challenge-fase2/`](tech-challenge-fase2/README.md): os modelos da
+Fase 1 têm os hiperparâmetros otimizados por um algoritmo genético e uma LLM explica os resultados
+para médicos. Relatório técnico: [`tech-challenge-fase2/reports/relatorio_tecnico_fase2.pdf`](tech-challenge-fase2/reports/relatorio_tecnico_fase2.pdf).
+
+---
+
 ## Visão geral
 
 O sistema analisa dados estruturados de exames relacionados a massas mamárias e auxilia a classificação técnica dos registros como:

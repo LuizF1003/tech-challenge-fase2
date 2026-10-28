@@ -1,0 +1,19 @@
+# Alternativa ao Poetry: python -m venv .venv && pip install -r requirements.txt
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.4,<2
+joblib>=1.4
+pyyaml>=6.0
+httpx>=0.27
+fastapi>=0.111
+uvicorn[standard]>=0.30
+prometheus-client>=0.20
+matplotlib>=3.8
+reportlab>=4.0
+
+# desenvolvimento / testes / notebook
+pytest>=8.0
+jupyter>=1.0
+
+# opcional: rastreamento de experimentos
+# mlflow>=2.12

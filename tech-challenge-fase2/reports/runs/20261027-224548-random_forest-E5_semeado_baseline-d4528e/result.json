@@ -1,0 +1,82 @@
+{
+  "description": "Igual ao E2, mas com o modelo original da Fase 1 na população inicial",
+  "config": {
+    "population_size": 16,
+    "generations": 12,
+    "crossover_rate": 0.9,
+    "mutation_rate": 0.15,
+    "selection": "tournament",
+    "tournament_k": 3,
+    "crossover": "blx",
+    "blx_alpha": 0.5,
+    "mutation": "gaussian",
+    "mutation_sigma": 0.1,
+    "elitism": 2,
+    "patience": 6,
+    "seed": 42
+  },
+  "best_params": {
+    "n_estimators": 266,
+    "max_depth": null,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "criterion": "gini",
+    "class_weight": "balanced",
+    "bootstrap": true,
+    "threshold": 0.45
+  },
+  "cv_fitness": 0.9649724054381479,
+  "cv_metrics": {
+    "accuracy": 0.9626373626373627,
+    "precision": 0.9371428571428572,
+    "recall": 0.9647058823529412,
+    "f1": 0.9507246376811594,
+    "roc_auc": 0.9905056759545924,
+    "false_negatives": 6,
+    "false_positives": 11,
+    "fitness": 0.9649724054381479
+  },
+  "evaluations": 108,
+  "cache_hits": 100,
+  "model_fits": 88,
+  "elapsed_s": 313.249,
+  "stopped_early": false,
+  "run_id": "20261027-224548-random_forest-E5_semeado_baseline-d4528e",
+  "test_metrics": {
+    "accuracy": 0.9649122807017544,
+    "precision": 0.975,
+    "recall": 0.9285714285714286,
+    "f1": 0.9512195121951219,
+    "roc_auc": 0.9978505291005291,
+    "false_negatives": 3,
+    "false_positives": 1
+  },
+  "robust_cv": {
+    "accuracy": {
+      "mean": 0.9545787545787546,
+      "std": 0.024692013987329977
+    },
+    "precision": {
+      "mean": 0.9287295245954538,
+      "std": 0.04955869083376155
+    },
+    "recall": {
+      "mean": 0.9549019607843138,
+      "std": 0.039992309910531654
+    },
+    "f1": {
+      "mean": 0.9404725370851844,
+      "std": 0.03156496412552263
+    },
+    "roc_auc": {
+      "mean": 0.990608875128999,
+      "std": 0.006728290707064417
+    },
+    "fitness": {
+      "mean": 0.9569930453585554,
+      "std": 0.027111134523727917
+    }
+  },
+  "duration_s": 326.24
+}

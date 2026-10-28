@@ -1,0 +1,82 @@
+{
+  "description": "População maior, roleta + crossover de um ponto, mutação baixa",
+  "config": {
+    "population_size": 24,
+    "generations": 10,
+    "crossover_rate": 0.8,
+    "mutation_rate": 0.05,
+    "selection": "roulette",
+    "tournament_k": 3,
+    "crossover": "one_point",
+    "blx_alpha": 0.5,
+    "mutation": "gaussian",
+    "mutation_sigma": 0.05,
+    "elitism": 2,
+    "patience": null,
+    "seed": 42
+  },
+  "best_params": {
+    "n_estimators": 88,
+    "max_depth": 20,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "criterion": "entropy",
+    "class_weight": "balanced_subsample",
+    "bootstrap": false,
+    "threshold": 0.48
+  },
+  "cv_fitness": 0.967378918057413,
+  "cv_metrics": {
+    "accuracy": 0.9736263736263736,
+    "precision": 0.9702380952380952,
+    "recall": 0.9588235294117647,
+    "f1": 0.9644970414201184,
+    "roc_auc": 0.991671826625387,
+    "false_negatives": 7,
+    "false_positives": 5,
+    "fitness": 0.967378918057413
+  },
+  "evaluations": 162,
+  "cache_hits": 102,
+  "model_fits": 130,
+  "elapsed_s": 362.952,
+  "stopped_early": false,
+  "run_id": "20261027-223144-random_forest-E3_roleta_um_ponto-c9c425",
+  "test_metrics": {
+    "accuracy": 0.9736842105263158,
+    "precision": 1.0,
+    "recall": 0.9285714285714286,
+    "f1": 0.9629629629629629,
+    "roc_auc": 0.9953703703703705,
+    "false_negatives": 3,
+    "false_positives": 0
+  },
+  "robust_cv": {
+    "accuracy": {
+      "mean": 0.9626373626373627,
+      "std": 0.019982683805107475
+    },
+    "precision": {
+      "mean": 0.9542313312669349,
+      "std": 0.038267368167988064
+    },
+    "recall": {
+      "mean": 0.9470588235294118,
+      "std": 0.0359417701565164
+    },
+    "f1": {
+      "mean": 0.9499103672088053,
+      "std": 0.0265837385998869
+    },
+    "roc_auc": {
+      "mean": 0.990264877880977,
+      "std": 0.009003828155405258
+    },
+    "fitness": {
+      "mean": 0.9566980746875126,
+      "std": 0.02457525625305234
+    }
+  },
+  "duration_s": 367.33
+}

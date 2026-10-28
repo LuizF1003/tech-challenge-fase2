@@ -1,0 +1,17 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: tech-challenge-api
+    # descobre todas as réplicas do serviço "api" pelo DNS do Docker
+    dns_sd_configs:
+      - names: ["api"]
+        type: A
+        port: 8000
+    metrics_path: /metrics
+
+rule_files: []
+# Exemplos de alertas sugeridos (ver docs/arquitetura.md):
+#  - taxa de erro 5xx > 5% em 5 min
+#  - p95 de latência de /predict > 500 ms
+#  - llm_requests_total{status="fallback"} crescendo (LLM indisponível)

@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "tech-challenge-fase2"
+version = "2.0.0"
+description = "Otimização de modelos de diagnóstico de câncer de mama com algoritmos genéticos e interpretação por LLM"
+authors = [
+    "Gabriel Wesley <RM376899>",
+    "Gustavo Leite <RM375733>",
+    "Luiz Fellipe <RM376854>",
+]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+numpy = ">=1.26"
+pandas = ">=2.2"
+scikit-learn = ">=1.4,<2"
+joblib = ">=1.4"
+pyyaml = ">=6.0"
+httpx = ">=0.27"
+fastapi = ">=0.111"
+uvicorn = { version = ">=0.30", extras = ["standard"] }
+prometheus-client = ">=0.20"
+matplotlib = ">=3.8"
+reportlab = ">=4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0"
+jupyter = ">=1.0"
+
+[tool.poetry.group.tracking]
+optional = true
+
+[tool.poetry.group.tracking.dependencies]
+mlflow = ">=2.12"
+
+[build-system]
+requires = ["poetry-core>=1.8"]
+build-backend = "poetry.core.masonry.api"

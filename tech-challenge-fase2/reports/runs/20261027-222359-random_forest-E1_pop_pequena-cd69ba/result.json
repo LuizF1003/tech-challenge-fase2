@@ -1,0 +1,82 @@
+{
+  "description": "População pequena, poucas gerações, mutação baixa — linha de base do AG",
+  "config": {
+    "population_size": 10,
+    "generations": 8,
+    "crossover_rate": 0.9,
+    "mutation_rate": 0.1,
+    "selection": "tournament",
+    "tournament_k": 3,
+    "crossover": "uniform",
+    "blx_alpha": 0.5,
+    "mutation": "gaussian",
+    "mutation_sigma": 0.1,
+    "elitism": 1,
+    "patience": null,
+    "seed": 42
+  },
+  "best_params": {
+    "n_estimators": 259,
+    "max_depth": 20,
+    "min_samples_split": 5,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "criterion": "entropy",
+    "class_weight": "balanced_subsample",
+    "bootstrap": false,
+    "threshold": 0.28
+  },
+  "cv_fitness": 0.9676368561778779,
+  "cv_metrics": {
+    "accuracy": 0.9560439560439561,
+    "precision": 0.9120879120879121,
+    "recall": 0.9764705882352941,
+    "f1": 0.9431818181818182,
+    "roc_auc": 0.9905572755417956,
+    "false_negatives": 4,
+    "false_positives": 16,
+    "fitness": 0.9676368561778779
+  },
+  "evaluations": 51,
+  "cache_hits": 39,
+  "model_fits": 45,
+  "elapsed_s": 144.015,
+  "stopped_early": false,
+  "run_id": "20261027-222359-random_forest-E1_pop_pequena-cd69ba",
+  "test_metrics": {
+    "accuracy": 0.9649122807017544,
+    "precision": 0.975,
+    "recall": 0.9285714285714286,
+    "f1": 0.9512195121951219,
+    "roc_auc": 0.9976851851851852,
+    "false_negatives": 3,
+    "false_positives": 1
+  },
+  "robust_cv": {
+    "accuracy": {
+      "mean": 0.9450549450549451,
+      "std": 0.022698803494255928
+    },
+    "precision": {
+      "mean": 0.8953017669029902,
+      "std": 0.050714283407861466
+    },
+    "recall": {
+      "mean": 0.9705882352941176,
+      "std": 0.030376339970254258
+    },
+    "f1": {
+      "mean": 0.9301974470722522,
+      "std": 0.027340557568130062
+    },
+    "roc_auc": {
+      "mean": 0.9911936704506364,
+      "std": 0.006726355799042078
+    },
+    "fitness": {
+      "mean": 0.9605725464477685,
+      "std": 0.019533191278944977
+    }
+  },
+  "duration_s": 154.46
+}

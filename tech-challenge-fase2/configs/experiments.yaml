@@ -1,0 +1,97 @@
+# Configuração dos experimentos do algoritmo genético.
+# Cada experimento varia tamanho da população, taxas e operadores para
+# comparar o comportamento do AG (exploração x convergência).
+
+fitness:
+  cv_folds: 5
+  weights:            # normalizados automaticamente para somar 1
+    recall: 0.45      # prioridade: não deixar passar casos malignos
+    f1: 0.35          # evita a solução trivial "tudo maligno"
+    roc_auc: 0.20     # qualidade da ordenação das probabilidades
+
+models:
+  - logistic_regression
+  - random_forest
+
+experiments:
+  E1_pop_pequena:
+    description: "População pequena, poucas gerações, mutação baixa — linha de base do AG"
+    population_size: 10
+    generations: 8
+    crossover_rate: 0.9
+    mutation_rate: 0.10
+    selection: tournament
+    tournament_k: 3
+    crossover: uniform
+    mutation: gaussian
+    mutation_sigma: 0.10
+    elitism: 1
+    seed: 42
+
+  E2_blx_torneio:
+    description: "População média, crossover BLX-α (codificação real) e torneio"
+    population_size: 16
+    generations: 12
+    crossover_rate: 0.9
+    mutation_rate: 0.15
+    selection: tournament
+    tournament_k: 3
+    crossover: blx
+    blx_alpha: 0.5
+    mutation: gaussian
+    mutation_sigma: 0.10
+    elitism: 2
+    seed: 42
+
+  E3_roleta_um_ponto:
+    description: "População maior, roleta + crossover de um ponto, mutação baixa"
+    population_size: 24
+    generations: 10
+    crossover_rate: 0.8
+    mutation_rate: 0.05
+    selection: roulette
+    crossover: one_point
+    mutation: gaussian
+    mutation_sigma: 0.05
+    elitism: 2
+    seed: 42
+
+  E4_alta_mutacao:
+    description: "Mutação alta e uniforme com seleção por ranking — foco em exploração"
+    population_size: 16
+    generations: 12
+    crossover_rate: 0.7
+    mutation_rate: 0.30
+    selection: rank
+    crossover: uniform
+    mutation: uniform
+    elitism: 2
+    seed: 42
+
+  E5_semeado_baseline:
+    description: "Igual ao E2, mas com o modelo original da Fase 1 na população inicial"
+    population_size: 16
+    generations: 12
+    crossover_rate: 0.9
+    mutation_rate: 0.15
+    selection: tournament
+    tournament_k: 3
+    crossover: blx
+    blx_alpha: 0.5
+    mutation: gaussian
+    mutation_sigma: 0.10
+    elitism: 2
+    seed_with_baseline: true
+    patience: 6
+    seed: 42
+
+# Busca aleatória com o mesmo nº de avaliações do E2 (comparação de abordagem)
+random_search:
+  reference_experiment: E2_blx_torneio
+  seed: 42
+
+# Validação final robusta (fora do loop do AG): CV repetida com outra semente
+final_validation:
+  cv_folds: 5
+  repeats: 3
+  seed: 2026

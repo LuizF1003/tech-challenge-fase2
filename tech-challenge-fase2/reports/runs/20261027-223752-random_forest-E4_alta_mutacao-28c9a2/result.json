@@ -1,0 +1,82 @@
+{
+  "description": "Mutação alta e uniforme com seleção por ranking — foco em exploração",
+  "config": {
+    "population_size": 16,
+    "generations": 12,
+    "crossover_rate": 0.7,
+    "mutation_rate": 0.3,
+    "selection": "rank",
+    "tournament_k": 3,
+    "crossover": "uniform",
+    "blx_alpha": 0.5,
+    "mutation": "uniform",
+    "mutation_sigma": 0.1,
+    "elitism": 2,
+    "patience": null,
+    "seed": 42
+  },
+  "best_params": {
+    "n_estimators": 65,
+    "max_depth": 8,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "criterion": "entropy",
+    "class_weight": null,
+    "bootstrap": false,
+    "threshold": 0.41
+  },
+  "cv_fitness": 0.9663294610811255,
+  "cv_metrics": {
+    "accuracy": 0.9714285714285714,
+    "precision": 0.9644970414201184,
+    "recall": 0.9588235294117647,
+    "f1": 0.9616519174041298,
+    "roc_auc": 0.9914035087719298,
+    "false_negatives": 7,
+    "false_positives": 6,
+    "fitness": 0.9663294610811255
+  },
+  "evaluations": 177,
+  "cache_hits": 31,
+  "model_fits": 175,
+  "elapsed_s": 473.691,
+  "stopped_early": false,
+  "run_id": "20261027-223752-random_forest-E4_alta_mutacao-28c9a2",
+  "test_metrics": {
+    "accuracy": 0.9824561403508771,
+    "precision": 1.0,
+    "recall": 0.9523809523809523,
+    "f1": 0.975609756097561,
+    "roc_auc": 0.9976851851851852,
+    "false_negatives": 2,
+    "false_positives": 0
+  },
+  "robust_cv": {
+    "accuracy": {
+      "mean": 0.9619047619047619,
+      "std": 0.022293222058172798
+    },
+    "precision": {
+      "mean": 0.9440805442583131,
+      "std": 0.04361885904095531
+    },
+    "recall": {
+      "mean": 0.9568627450980393,
+      "std": 0.03699600443943767
+    },
+    "f1": {
+      "mean": 0.9495861304133243,
+      "std": 0.029607263339632716
+    },
+    "roc_auc": {
+      "mean": 0.9915548675610595,
+      "std": 0.00684251946550694
+    },
+    "fitness": {
+      "mean": 0.9612543544509932,
+      "std": 0.025610912983365215
+    }
+  },
+  "duration_s": 476.61
+}

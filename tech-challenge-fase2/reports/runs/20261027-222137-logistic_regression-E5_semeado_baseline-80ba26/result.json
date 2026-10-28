@@ -1,0 +1,77 @@
+{
+  "description": "Igual ao E2, mas com o modelo original da Fase 1 na população inicial",
+  "config": {
+    "population_size": 16,
+    "generations": 12,
+    "crossover_rate": 0.9,
+    "mutation_rate": 0.15,
+    "selection": "tournament",
+    "tournament_k": 3,
+    "crossover": "blx",
+    "blx_alpha": 0.5,
+    "mutation": "gaussian",
+    "mutation_sigma": 0.1,
+    "elitism": 2,
+    "patience": 6,
+    "seed": 42
+  },
+  "best_params": {
+    "C": 3.2273,
+    "l1_ratio": 0.12,
+    "class_weight": null,
+    "threshold": 0.22
+  },
+  "cv_fitness": 0.9769628838831358,
+  "cv_metrics": {
+    "accuracy": 0.9692307692307692,
+    "precision": 0.9382022471910112,
+    "recall": 0.9823529411764705,
+    "f1": 0.9597701149425287,
+    "roc_auc": 0.9949226006191951,
+    "false_negatives": 3,
+    "false_positives": 11,
+    "fitness": 0.9769628838831358
+  },
+  "evaluations": 158,
+  "cache_hits": 50,
+  "model_fits": 154,
+  "elapsed_s": 55.776,
+  "stopped_early": false,
+  "run_id": "20261027-222137-logistic_regression-E5_semeado_baseline-80ba26",
+  "test_metrics": {
+    "accuracy": 0.9649122807017544,
+    "precision": 0.9523809523809523,
+    "recall": 0.9523809523809523,
+    "f1": 0.9523809523809523,
+    "roc_auc": 0.9943783068783069,
+    "false_negatives": 2,
+    "false_positives": 2
+  },
+  "robust_cv": {
+    "accuracy": {
+      "mean": 0.9619047619047619,
+      "std": 0.02265146495786124
+    },
+    "precision": {
+      "mean": 0.9289420424404946,
+      "std": 0.04403982635548798
+    },
+    "recall": {
+      "mean": 0.9745098039215686,
+      "std": 0.023692247007048188
+    },
+    "f1": {
+      "mean": 0.9506986429327124,
+      "std": 0.028974172687286037
+    },
+    "roc_auc": {
+      "mean": 0.9929480564155486,
+      "std": 0.006909122854696311
+    },
+    "fitness": {
+      "mean": 0.969863548074265,
+      "std": 0.019831342628662752
+    }
+  },
+  "duration_s": 57.45
+}
